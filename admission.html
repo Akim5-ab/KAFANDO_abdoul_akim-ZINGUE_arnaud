@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admission - École Supérieure d'Informatique</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <style>
+      body {
+        background-image: url(images/MSR.jpeg);
+      }
+    </style>
+    <header>
+      <h1>École Supérieure d'Informatique</h1>
+      <img src="images/esi.jpg" alt="Logo de l'école" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="academique.html">Académique</a></li>
+          <li><a href="admission.html">Admission</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Formulaire d'admission</h2>
+
+      <form action="#" method="post">
+        <label for="nom">Nom :</label><br />
+        <input type="text" id="nom" name="nom" required /><br /><br />
+
+        <label for="prenom">Prénom :</label><br />
+        <input type="text" id="prenom" name="prenom" required /><br /><br />
+
+        <label for="naissance">Date de naissance :</label><br />
+        <input
+          type="date"
+          id="naissance"
+          name="naissance"
+          required
+        /><br /><br />
+
+        <label for="email">Adresse e-mail :</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="telephone">Numéro de téléphone :</label><br />
+        <input
+          type="tel"
+          id="telephone"
+          name="telephone"
+          required
+        /><br /><br />
+
+        <label>Genre :</label><br />
+        <input type="radio" id="homme" name="genre" value="Homme" required />
+        <label for="homme">Homme</label><br />
+        <input type="radio" id="femme" name="genre" value="Femme" />
+        <label for="femme">Femme</label><br /><br />
+
+        <label for="departement">Département souhaité :</label><br />
+        <select id="departement" name="departement" required>
+          <option value="">--Choisir un département--</option>
+          <option value="sciences">Sciences</option>
+          <option value="arts">Arts</option>
+          <option value="commerce">Commerce</option></select
+        ><br /><br />
+
+        <label>Cours souhaité(s) :</label><br />
+        <input
+          type="checkbox"
+          name="cours[]"
+          value="Informatique"
+        />Informatique<br />
+        <input
+          type="checkbox"
+          name="cours[]"
+          value="Mathématiques"
+        />Mathématiques<br />
+        <input type="checkbox" name="cours[]" value="Anglais" />Anglais<br />
+        <input
+          type="checkbox"
+          name="cours[]"
+          value="Sociologie"
+        />Sociologie<br /><br />
+
+        <input type="submit" value="Envoyer la demande" />
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 École Supérieure d'Informatique</p>
+    </footer>
+  </body>
+</html>
